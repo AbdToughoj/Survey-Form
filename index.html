@@ -4,9 +4,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <title>McDonald's Survey Form</title>
 </head>
 <body>
-    
+    <div class="head">
+    <h1 id="title">McDonald's Survey Form<h1>
+    <p id="description"><em>Thank you for taking the time to help us improve our services</em></p>
+    </div>
+    <form id="survey-form" action="">
+        <fieldset>
+            <label for="name" id="name-label">Name</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+  
+            <label for="email" id="email-label">Email</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+  
+            <label for="number" id="number-label">Age (optional)</label>
+            <input type="number" id="number" placeholder="Age" min=10 max=100>
+            <label for="role">Which option best describes your current role?</label>
+            <select name="role" id="dropdown">
+                <option>Select current role</option>
+                <option value="student">Student</option>
+                <option value="full-time-job">Full Time Job</option>
+                <option value="full-time-learner">Full Time Learner</option>
+                <option value="prefer not to say">Prefer not to say</option>
+                <option value="other">Other</option>
+            </select>
+        </fieldset>
+        <fieldset>
+          <label> Would you recommend McDonald's to a friend?</label>
+          <label for="definitely"><input type="radio" class="inline" name="recommend" value="definitely" id="definitely" checked /> Definitely</label>
+          <label for="maybe"><input type="radio" class="inline" name="recommend" value="maybe" id="maybe"/> Maybe</label>
+          <label for="not-sure"><input type="radio" class="inline" name="recommend" value="not-sure" id="not-sure" /> Not sure</label>
+        </fieldset>
+        <fieldset>
+            <label for="song">What's your favorite meal in McDonald's?
+            <select name="meal" id="meal">
+              <option>Select an option</option>
+              <option value="Big-Tasty">Big Tasty</option>
+              <option value="Chicken-Mac">Chicken Mac</option>
+              <option value="Grand Chicken Deluxe">Grand Chicken Deluxe</option>
+              <option value="Grand Chicken Special">Grand Chicken Special</option>
+              <option value="Grand Chicken Spicy">Grand Chicken Spicy</option>
+            </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <label>What would you like to see improved? <small>(Check all that apply)</small> </label>
+            <label for="meals"><input type="checkbox" value="meals" id="meals">Meals</label>
+            <label for="McDelivery"><input type="checkbox" value="McDelivery" id="McDelivery">McDelivery</label>
+            <label for="cleanliness"><input type="checkbox" value="cleanliness" id="cleanliness">cleanliness</label>
+            <label for="drive-thru"><input type="checkbox" value="drive-thru" id="drive-thru">Drive thru services</label>
+        </fieldset> 
+        <fieldset>     
+            <label for="comments">Any comments or suggestions?
+            <textarea name="comments" id="comments" placeholder="Enter your comments here..."></textarea>
+            </label>
+        </fieldset>
+        <input type="submit" id="submit"/>
+      </form>  
 </body>
 </html>

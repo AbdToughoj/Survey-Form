@@ -1,0 +1,95 @@
+body{
+  width: 100vw;
+  height: 100vh;
+  background: url("https://purepng.com/public/uploads/large/purepng.com-mcdonalds-logologobrand-logoiconslogos-25151994043391qrj.png");
+  background-size: cover;
+  background-position: center; 
+  background-color: #D63E2B ;
+  font-family: Didot;
+  font-size: 25px;
+}
+
+.head{
+    padding: 40px 0 10px 0;
+    color: black;
+    }
+
+h1, p {
+    text-align: center;
+    }
+h1 {
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+  }
+  
+p {
+    font-size: 1.125rem;
+    text-shadow: 1px 1px 1px rgb(0 0 0 / 10%);
+  }
+
+label {
+    display: block;
+    }
+
+form{
+    max-width: 700px;
+    margin: 10px auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+    padding: 30px;
+    text-align: left;
+    color: black;
+    }
+  
+  input, select, textarea {
+    width: 100%;
+    margin: 0.1em 0 1em 0;
+    min-height: 2em;
+    font-size: 0.55em;
+
+  }
+    
+
+  fieldset {
+    border: none;
+    padding: 0;
+    margin-bottom: 25px;
+  }
+  
+  fieldset legend {
+    margin-bottom: 10px;
+  }
+
+  
+  input, select {
+    border-radius: 5px;
+    }
+  
+  textarea {  
+    min-height: 120px;
+
+  }
+  
+  input[type="checkbox"] {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    min-height: unset;
+    vertical-align: middle;
+  }
+
+  input[type="radio"]{
+    width: unset;
+    margin: 0 0.5em 0 0;
+    min-height: unset;
+    vertical-align: middle;
+  }
+
+  input[type="submit"] {
+    display: block;
+    width: 100%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color:  white;
+    border-color: blach;
+  }
